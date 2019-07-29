@@ -19,15 +19,15 @@ AlwaysBlank\Extrovert\Network\Facebook::url('https://www.alwaysblank.org');
 Some networks also support additional information, such as a name or description. You can pass these serially, or as part of an array. The following are all equivalent:
 
 ```php
-AlwaysBlank\Extrovert\Network\Twitter::url('https://www.alwaysblank.org', "Extrovert Can Help", "A new tool to generate simple share URLs.");
+AlwaysBlank\Extrovert\Network\ExampleNetwork::url('https://www.alwaysblank.org', "Extrovert Can Help", "A new tool to generate simple share URLs.");
 
-AlwaysBlank\Extrovert\Network\Twitter::url([
+AlwaysBlank\Extrovert\Network\ExampleNetwork::url([
   'https://www.alwaysblank.org', 
   "Extrovert Can Help", 
   "A new tool to generate simple share URLs."
 ]);
 
-AlwaysBlank\Extrovert\Network\Twitter::url([
+AlwaysBlank\Extrovert\Network\ExampleNetwork::url([
   'uri' => 'https://www.alwaysblank.org', 
   'name' => "Extrovert Can Help", 
   'description' => "A new tool to generate simple share URLs."
@@ -41,17 +41,17 @@ All content is automatically URL-encoded—do **not** pass in already encoded st
 You can also generate a simple link element, with a few [safety features](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/). The syntax is very similar to `url()`, but with `link()` you *must* pass your url arguments as an array.
 
 ```php
-AlwaysBlank\Extrovert\Network\Twitter::link(
+AlwaysBlank\Extrovert\Network\ExampleNetwork::link(
   ['https://www.alwaysblank.org', "Extrovert Can Help", "A new tool to generate simple share URLs."],
-  'Share on Twitter',
-  ['class' => 'twitter-link']
+  'Share on Network',
+  ['class' => 'link']
 );
 ```
 
 ## Supported Networks
 
 - Facebook - Supports only the `url` argument.
-- LinkedIn - Supports the `url`, `name`, and `description` arguments.
+- LinkedIn - Supports the `url` argument.
 - Twitter - Supports the `url` and `name` arguments.
 - Email - Supports the `url` and `name`, and `description` arguments, but behaves a little differently. It expects `description` to contain a `%s` that will be replaced with the `url`. It will also attempt to generate reasonable defaults for `name` and `description` (the subject and body of the email respectively) if none are provided.
 
