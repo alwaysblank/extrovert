@@ -18,4 +18,9 @@ class Constants
         'excerpt'     => 'description',
         'blurb'       => 'description',
     ];
+
+    public const ELEMENT_ARGS = [
+        // key        // maps to argument
+        'class'   => 'class',
+    ];
 }
