@@ -52,6 +52,7 @@ AlwaysBlank\Extrovert\Network\Twitter::link(
 
 - Facebook - Supports only the `url` argument.
 - LinkedIn - Supports the `url`, `name`, and `description` arguments.
+- Twitter - Supports the `url` and `name` arguments.
 
 ## Notes
 
