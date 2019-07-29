@@ -20,12 +20,6 @@ class LinkedIn extends Network
                 case 'uri':
                     $query['url'] = $value;
                     break;
-                case 'name':
-                    $query['title'] = $value;
-                    break;
-                case 'description':
-                    $query['summary'] = $value;
-                    break;
             }
         }
 
