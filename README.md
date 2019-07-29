@@ -53,6 +53,7 @@ AlwaysBlank\Extrovert\Network\Twitter::link(
 - Facebook - Supports only the `url` argument.
 - LinkedIn - Supports the `url`, `name`, and `description` arguments.
 - Twitter - Supports the `url` and `name` arguments.
+- Email - Supports the `url` and `name`, and `description` arguments, but behaves a little differently. It expects `description` to contain a `%s` that will be replaced with the `url`. It will also attempt to generate reasonable defaults for `name` and `description` (the subject and body of the email respectively) if none are provided.
 
 ## Notes
 
