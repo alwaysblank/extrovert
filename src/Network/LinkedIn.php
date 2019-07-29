@@ -24,7 +24,7 @@ class LinkedIn extends Network
                     $query['title'] = $value;
                     break;
                 case 'description':
-                    $query['description'] = $value;
+                    $query['summary'] = $value;
                     break;
             }
         }
