@@ -34,6 +34,6 @@ class Email extends Network
             }
         }
 
-        return self::BASE . http_build_query($query);
+        return self::BASE . static::buildUnencodedQuery($query);
     }
 }
