@@ -203,4 +203,20 @@ abstract class Network
     {
         return static::getAuthoritativeArgumentName($arg, Constants::ELEMENT_ARGS);
     }
+
+    /**
+     * Builds a query that is *not* urlencoded. Mostly useful for mailto: links.
+     *
+     * @param array $query
+     *
+     * @return string
+     */
+    public static function buildUnencodedQuery(array $query): string
+    {
+        $pairs = [];
+        foreach ($query as $key => $item) {
+            $pairs[] = "$key=$item";
+        }
+        return join('&', $pairs);
+    }
 }
