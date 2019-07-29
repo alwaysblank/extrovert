@@ -10,7 +10,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "AlwaysBlank\\Extrovert\\": "src/"
+            "AlwaysBlank\\Extrovert\\": "src/",
+            "AlwaysBlank\\Extrovert\\Tests\\": "tests/"
         }
     },
     "require": {
