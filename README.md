@@ -6,7 +6,7 @@ Quickly generate simple social media share URLs.
 
 ## Usage
 
-This project only generates URLs (and, optionally, link elements to wrap them); it does *not* implement any kind of more involved sharing activity. It is intended for low-investment implementations.
+This project only generates URLs (and, optionally, link elements to wrap them); it does *not* implement any kind of more involved sharing activity, and it never will. It is not attempting to be a social media clearinghouse with deep integration, interactivity, and share counts, so it will only ever support services that allow for sharing through the simple mechanism of a link.
 
 ### URL
 
@@ -54,6 +54,7 @@ AlwaysBlank\Extrovert\Network\ExampleNetwork::link(
 - LinkedIn - Supports the `url` argument.
 - Twitter - Supports the `url` and `name` arguments.
 - Email - Supports the `url` and `name`, and `description` arguments, but behaves a little differently. It expects `description` to contain a `%s` that will be replaced with the `url`. It will also attempt to generate reasonable defaults for `name` and `description` (the subject and body of the email respectively) if none are provided.
+- Your Favorite! - Submit an [issue](https://github.com/alwaysblank/extrovert/issues/new) or, even better, a [pull request](https://github.com/alwaysblank/extrovert/pulls)! Please do keep in mind the limitations and intentions of the project, however.
 
 ## Notes
 
