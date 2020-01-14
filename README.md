@@ -61,4 +61,4 @@ Extrovert is very type-sensitive, so make sure you pass it arguments that it wil
 
 If you pass arguments that are the correct type but are otherwise incorrect, it will very politely just return an empty string. 
 
-Many of these services will pull information to popular rich links from the URL you are telling them to link to. For this reason, it is wise to make sure that the metadata (and/or OpenGraph data) on that URL is correctly implemented. It also means that they will throw errors if you try to link to unreachable URLS (i.e. `development-site.local`); 
+Many of these services will pull information to populate rich links from the URL you are telling them to link to. For this reason, it is wise to make sure that the metadata (and/or OpenGraph data) on that URL is correctly implemented. It also means that they will throw errors if you try to link to unreachable URLS (i.e. `development-site.local`); 
