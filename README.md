@@ -53,6 +53,7 @@ AlwaysBlank\Extrovert\Network\ExampleNetwork::link(
 - Facebook - Supports only the `url` argument.
 - LinkedIn - Supports the `url` argument.
 - Twitter - Supports the `url` and `name` arguments.
+- Pinterest - Supports the `url`, `description`, and `media` arguments, but beat in mind that they *must* be passed as a key array, and that you *must* pass both a `url` and `media` value--Pinterest won't understand it otherwise, and you'll get odd results.
 - Email - Supports the `url` and `name`, and `description` arguments, but behaves a little differently. It expects `description` to contain a `%s` that will be replaced with the `url`. It will also attempt to generate reasonable defaults for `name` and `description` (the subject and body of the email respectively) if none are provided.
 - Your Favorite! - Submit an [issue](https://github.com/alwaysblank/extrovert/issues/new) or, even better, a [pull request](https://github.com/alwaysblank/extrovert/pulls)! Please do keep in mind the limitations and intentions of the project, however.
 

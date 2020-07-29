@@ -5,6 +5,7 @@ namespace AlwaysBlank\Extrovert\Tests;
 class Constants
 {
     public const TEST_URL     = 'https://www.alwaysblank.org';
+    public const TEST_IMAGE_URL = 'https://www.alwaysblank.org/media/site/fosterarea.com/fosterarea.com_front_page.png';
     public const TEST_ENCODED = 'https%3A%2F%2Fwww.alwaysblank.org';
 
     public const TEST_TITLE         = 'Extrovert, for simple sharing';

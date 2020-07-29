@@ -17,10 +17,12 @@ class Constants
         'desc'        => 'description',
         'excerpt'     => 'description',
         'blurb'       => 'description',
+        'image'       => 'media',
+        'media'       => 'media',
     ];
 
     public const ELEMENT_ARGS = [
         // key        // maps to argument
-        'class'   => 'class',
+        'class' => 'class',
     ];
 }
